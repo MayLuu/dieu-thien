@@ -113,8 +113,23 @@ export default function Home() {
 
       <div
         className="welcome section"
-
       >
+
+        <Image
+          src={"/images/leave1.svg"}
+          width={500}
+          height={500}
+          alt="leave-background"
+          className="leave1-bg"
+        />
+
+        <Image
+          src={"/images/leave2.svg"}
+          width={500}
+          height={500}
+          alt="leave-background"
+          className="leave2-bg"
+        />
         <SectionImgText
           title={t("homePage.summary")}
           text={t("homePage.introduce")}

@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionImgText from "@/components/SectionImgText";
-import "@/styles/about.css";
+import { motion } from 'framer-motion';
 
 const feedbackData = [
   {
@@ -103,31 +103,49 @@ const AboutUs = () => {
       </div>
 
       <div className="feedback">
-        <h1 className="heading1 cream-text">{about("feedbackCustomer")}</h1>
-        <p className="cream-text">{about("feedbackDesc")}</p>
+        <h1 className="heading1 green-text">{about("feedbackCustomer")}</h1>
+        <p className="green-text">{about("feedbackDesc")}</p>
         <div
           className="column-container"
         >
-          {feedbackData.map((item, idx) => {
-            return (
-              <div key={idx} className="feedback__content">
-                <a href={item.url}>
-                  <div className="text--border-tlbr">
-                    <Image
-                      className="avatar"
-                      src={item.avatar}
-                      alt="avatar"
-                      width={0}
-                      height={0}
-                      style={{ width: "70px", height: "70px" }}
-                    />
-                    <p className="content cream-text">{item.content}</p>
-                    <p className="userName cream-text">{item.userName}</p>
-                  </div>
-                </a>
-              </div>
-            );
-          })}
+          <Image
+            src={"/images/leave1.svg"}
+            width={500}
+            height={500}
+            alt="leave-background"
+            className="leave1-bg"
+          />
+
+          <Image
+            src={"/images/leave1.svg"}
+            width={500}
+            height={500}
+            alt="leave-background"
+            className="leave2-bg"
+          />
+
+          <div className="feedback__wrapper">
+            {feedbackData.map((item, idx) => {
+              return (
+                <div key={idx} className="feedback__content">
+                  <a href={item.url}>
+                    <div className="text--border-tlbr">
+                      <Image
+                        className="avatar"
+                        src={item.avatar}
+                        alt="avatar"
+                        width={0}
+                        height={0}
+                        style={{ width: "70px", height: "70px" }}
+                      />
+                      <p className="content cream-text">{item.content}</p>
+                      <p className="userName cream-text">{item.userName}</p>
+                    </div>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

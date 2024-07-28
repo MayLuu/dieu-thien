@@ -5,22 +5,6 @@
   }
   .banner {
     position: relative;
-
-    .banner__text {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 255px;
-      width: 100%;
-      background-color: var(--background-cream-50);
-      color: var(--text-color-green);
-      align-content: center;
-      p {
-        text-align: center;
-        font-size: 2rem;
-        line-height: 2.25rem;
-      }
-    }
   }
 
   .section__text > h1 {
