@@ -10,7 +10,7 @@ const ContactPage = () => {
   const t = useTranslations();
 
   return (
-    <div className={styles.contact}>
+    <div className={'contact ' + styles.contact}>
       <Image
         src={"/images/contact.svg"}
         alt={"logo"}
@@ -19,6 +19,24 @@ const ContactPage = () => {
         style={{ width: "100%", height: "auto" }}
       />
       <div className={styles.contactInfo}>
+        <div className="column-container">
+          <Image
+            src={"/images/leave1.svg"}
+            width={500}
+            height={500}
+            alt="leave-background"
+            className="leave1-bg"
+          />
+
+          <Image
+            src={"/images/leave1.svg"}
+            width={500}
+            height={500}
+            alt="leave-background"
+            className="leave2-bg"
+          />
+        </div>
+
         <h1 className="heading1" style={{ marginBottom: `4rem ` }}>
           {t("general.contactUs")}
         </h1>

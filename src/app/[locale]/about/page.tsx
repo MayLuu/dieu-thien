@@ -102,7 +102,7 @@ const AboutUs = () => {
         })}
       </div>
 
-      <div className="feedback">
+      <div className="feedback section">
         <h1 className="heading1 green-text">{about("feedbackCustomer")}</h1>
         <p className="green-text">{about("feedbackDesc")}</p>
         <div
@@ -127,22 +127,27 @@ const AboutUs = () => {
           <div className="feedback__wrapper">
             {feedbackData.map((item, idx) => {
               return (
-                <div key={idx} className="feedback__content">
+                <motion.div
+                  initial={{ opacity: 0, y: 120 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 * idx, delay: 1 * idx, ease: 'easeIn' }}
+
+                  key={idx} className="feedback__content">
                   <a href={item.url}>
                     <div className="text--border-tlbr">
                       <Image
                         className="avatar"
-                        src={item.avatar}
+                        src={"/images/avatar.jpg"}
                         alt="avatar"
                         width={0}
                         height={0}
-                        style={{ width: "70px", height: "70px" }}
+                        style={{ width: "70px", height: "70px", borderRadius: "50%" }}
                       />
                       <p className="content cream-text">{item.content}</p>
                       <p className="userName cream-text">{item.userName}</p>
                     </div>
                   </a>
-                </div>
+                </motion.div>
               );
             })}
           </div>

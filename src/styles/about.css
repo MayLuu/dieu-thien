@@ -24,8 +24,6 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
-
     .feedback__content {
       display: flex;
       gap: 16px;
