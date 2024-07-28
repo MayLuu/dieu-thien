@@ -85,7 +85,7 @@ const AboutUs = () => {
 
       <div className="about-us__content" style={{ backgroundColor: `#255442`, color: `#fffec` }}>
         {aboutUsData.map((item, idx) => {
-          return (
+          return item ? (
             <SectionImgText
               key={idx}
               title={item.title}
@@ -98,7 +98,7 @@ const AboutUs = () => {
               stylesImg={{ width: "50%", height: "auto" }}
               stylesText={{ color: "#FFFFEC" }}
             />
-          );
+          ) : (<></>);
         })}
       </div>
 
