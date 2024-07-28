@@ -49,7 +49,7 @@ const Header = ({ scrollTop }: HeaderProps) => {
         {/* Logo */}
         <div className="logo__wrapper">
           <a href="/">
-            <img id="Logo" src="/images/logo.svg" alt="logo" />
+            <Image id="Logo" src={"/images/logo.svg"} alt="logo" width={60} height={60} />
           </a>
         </div>
 
