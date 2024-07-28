@@ -128,5 +128,19 @@
 }
 
 .swiper3d-pagination .swiper-pagination-bullet-active {
-  background: var(--primary);
+  background: var(--swiper-bullet-cream);
+}
+
+.swiper3d-container .swiper {
+  height: 30rem;
+}
+.special-menu .swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #999;
+}
+.special-menu .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 1rem;
+  height: 1rem;
+  background: var(--swiper-bullet-cream);
 }

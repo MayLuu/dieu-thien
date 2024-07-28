@@ -229,7 +229,8 @@ header {
   }
 }
 .leave1-bg,
-.leave2-bg {
+.leave2-bg,
+.leave-bg {
   position: absolute;
 }
 .section {
@@ -271,6 +272,23 @@ header {
     right: -10%;
     top: 90%;
     transform: scale(0.8) rotate(-120deg);
+  }
+}
+
+.special-menu {
+  position: relative;
+
+  .leave1-bg {
+    left: 10%;
+    top: -4%;
+  }
+  .leave2-bg {
+    left: 10%;
+    top: 50%;
+  }
+  .leave-bg {
+    right: 0%;
+    top: 50%;
   }
 }
 .image--border-tlbr {

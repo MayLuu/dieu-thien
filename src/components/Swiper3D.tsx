@@ -18,11 +18,13 @@ const Swiper3D = (props: Swiper3DProps) => {
   return (
     <div className="swiper3d-container">
       <Swiper
+
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         loop={true}
-        autoplay={{ delay: 2000 }}
+        // autoplay={{ delay: 2000 }}
+        autoplay={false}
         slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 0,
@@ -30,10 +32,17 @@ const Swiper3D = (props: Swiper3DProps) => {
           depth: 100,
           modifier: 3,
         }}
-        pagination={{ el: ".swiper3d-pagination", clickable: true }}
+        pagination={{
+          el: ".swiper3d-pagination",
+          // type: 'bullets',
+          clickable: true,
+          dynamicBullets: true,
+        }}
         modules={[Autoplay, EffectCoverflow, Pagination]}
         slidesPerGroup={1}
-        spaceBetween={100}
+        spaceBetween={-450}
+
+
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
