@@ -230,7 +230,8 @@ header {
 }
 .leave1-bg,
 .leave2-bg,
-.leave-bg {
+.leave-bg,
+.leave-group-bg {
   position: absolute;
 }
 .section {
@@ -289,6 +290,21 @@ header {
   .leave-bg {
     right: 0%;
     top: 50%;
+  }
+}
+.about-us__content {
+  position: relative;
+  .leave2-bg {
+    right: 0%;
+    top: 15%;
+  }
+  .leave-bg {
+    left: -5%;
+    top: 45%;
+  }
+  .leave-group-bg {
+    right: -5%;
+    top: 85%;
   }
 }
 .image--border-tlbr {
@@ -565,6 +581,9 @@ textarea.ant-input {
       column-gap: 2rem;
     }
   }
+  .column-container {
+    padding: 1rem;
+  }
 }
 @media (max-width: 991px) {
   :root {
@@ -572,7 +591,6 @@ textarea.ant-input {
   }
   header {
     padding: 0 1.5rem;
-    width: 100%;
     .header__nav {
       display: none;
     }
@@ -600,6 +618,12 @@ textarea.ant-input {
   }
 }
 @media (max-width: 576px) {
+  .leave1-bg,
+  .leave2-bg,
+  .leave-bg,
+  .leave-group-bg {
+    display: none;
+  }
   :root {
     --base-font-size: 14px;
   }
@@ -610,6 +634,19 @@ textarea.ant-input {
     .section__content {
       grid-template-columns: 1fr;
       row-gap: 2rem;
+    }
+  }
+  a.header__button--order,
+  .header__nav {
+    display: none;
+  }
+
+  .banner__text {
+    h1#title {
+      font-size: 3rem;
+    }
+    p {
+      display: none;
     }
   }
 }

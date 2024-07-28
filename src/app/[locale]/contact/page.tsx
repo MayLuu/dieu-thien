@@ -6,7 +6,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import SmartphoneIcon from "@mui/icons-material/Smartphone";
 import EmailIcon from "@mui/icons-material/Email";
 
-const ContactPage = () => {
+const ContactPage = ({ params }: { params: { locale: string } }) => {
   const t = useTranslations();
 
   return (

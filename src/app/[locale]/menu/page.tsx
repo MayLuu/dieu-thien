@@ -13,7 +13,9 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Menu = () => {
+
+
+const Menu = ({ params }: { params: { locale: string } }) => {
   const t = useTranslations("menuPage");
   const localActive = useLocale();
   const { categories, menu } = useMenu();

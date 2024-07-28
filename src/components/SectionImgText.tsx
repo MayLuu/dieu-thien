@@ -42,6 +42,7 @@ const SectionImgText = (props: SectionProps) => {
               alt={`${alt}-${index}`}
               width={width}
               height={height}
+              priority
 
             />
           ))}
