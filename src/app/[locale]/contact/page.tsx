@@ -18,7 +18,7 @@ const ContactPage = ({ params }: { params: { locale: string } }) => {
         height={0}
         style={{ width: "100%", height: "auto" }}
       />
-      <div className={styles.contactInfo}>
+      <div className={'contact-info ' + styles.contactInfo}>
         <div className="column-container">
           <Image
             src={"/images/leave1.svg"}
@@ -40,7 +40,7 @@ const ContactPage = ({ params }: { params: { locale: string } }) => {
         <h1 className="heading1" style={{ marginBottom: `4rem ` }}>
           {t("general.contactUs")}
         </h1>
-        <div className={styles.row}>
+        <div className={'contact-row ' + styles.row}>
           <a
             className={styles.column}
             href="https://maps.app.goo.gl/qy7BD4LF6tcTuQHi6"

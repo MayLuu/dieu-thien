@@ -638,6 +638,42 @@ textarea.ant-input {
   .column-container {
     margin: 2rem 1rem;
   }
+  .order {
+    .column-container {
+      justify-content: center;
+    }
+  }
+
+  footer {
+    .column-container {
+      gap: 2rem;
+      justify-content: center;
+    }
+  }
+  #menu--title {
+    font-size: 1.8rem;
+  }
+  .contact {
+    margin-top: 75px !important;
+    height: fit-content !important;
+    padding-bottom: 2rem;
+    .contactInfo {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    .contact-info {
+      height: fit-content !important;
+      .contact-row {
+        gap: 1rem;
+      }
+    }
+    .heading3 {
+      font-size: 1.5rem;
+    }
+    .contact-row {
+      flex-wrap: wrap !important;
+    }
+  }
 }
 @media (max-width: 576px) {
   :root {

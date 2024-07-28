@@ -7,12 +7,14 @@ footer {
   .section__container {
     max-width: var(--max-content-width);
     margin: 0 auto;
+    flex-wrap: wrap;
   }
   .column {
     display: grid;
     justify-content: center;
     justify-items: start;
     align-content: center;
+    min-width: fit-content;
 
     img {
       width: 80px;
