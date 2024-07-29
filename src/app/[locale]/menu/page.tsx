@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 
 
-const Menu = ({ locale: any }) => {
+const Menu = () => {
   const t = useTranslations("menuPage");
   const localActive = useLocale();
   const { categories, menu } = useMenu();

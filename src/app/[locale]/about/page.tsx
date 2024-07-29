@@ -32,7 +32,7 @@ const feedbackData = [
 ];
 
 
-const AboutUs = ({ params }: { params: { locale: string } }) => {
+const AboutUs = () => {
   const about = useTranslations("aboutUsPage");
 
   const aboutUsData = [
