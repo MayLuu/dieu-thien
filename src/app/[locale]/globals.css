@@ -147,7 +147,6 @@ header {
   }
 
   .header__nav {
-    flex: auto;
     display: flex;
     gap: 24px;
     color: var(--text-color-dark);
@@ -184,8 +183,8 @@ header {
   }
 
   .header__language_order {
-    width: 20%;
     display: flex;
+    width: 20%;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
@@ -660,6 +659,7 @@ textarea.ant-input {
   }
 
   footer {
+    padding: 2rem 1rem;
     .column-container {
       gap: 2rem;
       justify-content: center;
