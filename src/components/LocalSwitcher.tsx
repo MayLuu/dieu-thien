@@ -23,18 +23,18 @@ const LocalSwitcher = () => {
           localActive === "vi"
             ? "/images/flags/Vietnam.svg"
             : localActive === "en"
-            ? "/images/flags/England.svg"
-            : "/images/flags/China.svg"
+              ? "/images/flags/England.svg"
+              : "/images/flags/China.svg"
         }
         height={20}
         width={30}
         alt="lang"
       />
-      <div className="custom-select-wrapper">
+      <div className="custom-select-wrapper" style={{ display: "flex" }}>
         <select value={localActive} onChange={(e) => onSelectChange(e)}>
           <option value="vi">VI</option>
           <option value="en">EN</option>
-          <option value="zh">CHI</option>
+          {/* <option value="zh">CHI</option> */}
         </select>
       </div>
     </div>

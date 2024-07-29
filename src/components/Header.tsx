@@ -72,7 +72,7 @@ const Header = ({ scrollTop }: HeaderProps) => {
         </div>
 
         {/* Language & Order */}
-        <div className="header__language_order">
+        <div className="header__language_order" style={{ display: "flex" }}>
           {/* Language */}
           <LocalSwitcher />
 
