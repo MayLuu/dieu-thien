@@ -616,6 +616,21 @@ textarea.ant-input {
       row-gap: 2rem;
     }
   }
+  .order-page {
+    height: 200vh !important;
+  }
+  .order-content {
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content !important;
+    .order-content__left--info {
+      width: 100% !important;
+      justify-content: center;
+    }
+    .order-content__right--form {
+      width: 100% !important;
+    }
+  }
 }
 @media (max-width: 600px) {
   .leave1-bg,
